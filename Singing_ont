@@ -1,0 +1,5199 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mna/ontologies/2023/7/untitled-ontology-53"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mna/ontologies/2023/7/untitled-ontology-53">
+    <Prefix name="" IRI="http://www.semanticweb.org/mna/ontologies/2023/7/untitled-ontology-53"/>
+    <Prefix name="mo" IRI="http://purl.org/ontology/mo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="schema" IRI="http://schema.org/"/>
+    <Prefix name="untitled-ontology-53" IRI="http://www.semanticweb.org/mna/ontologies/2023/7/untitled-ontology-53#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creationDate"/>
+        <Literal>02-06-2023</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal>Arooba Sultan Tiwana</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal>The purpose of building the Singing Ontology is to provide a consensual knowledge model of the different types of Singing domain to be used by public.
+The ontology has to focus just on the different types of singing domain and its presence in different locations around the world. The level of granularity is directly related to the competency questions and terms identified.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal>Singing Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#language"/>
+        <Literal>English</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="mo:Genre"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mo:Instrument"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:DefinedRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Duration"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:MusicGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Person"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Place"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="schema:Review"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Africa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#European"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NorthAmerica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oceania"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Origin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Producer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReleaseStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReleaseType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Singer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SongWriter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SouthAmerica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VocalTechnique"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:byArtist"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCompany"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDuration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGenre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInstrument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMembers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOrigin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProducer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReleaseStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReleaseType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReview"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSinger"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSongWriter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:about"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:addressRegion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:alternateName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:award"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:birthDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:dateCreated"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:datePublished"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:deathDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:duration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:inLanguage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="schema:size"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lyrics"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#trackId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#views"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Accordion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AcousticGuitar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AfghaniGuitar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Albania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Album"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Algeria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alghoza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AlphaSphere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Angola"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Argentina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Armenia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Artist1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AudioBook"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Australia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Austria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AutoTune"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Azerbaijan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BackPhrasing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Baglama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bagpipes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Banjo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BassGuitar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bassoon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Belarus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Belgium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Benin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Berimbau"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Blues"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bongo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BootLeg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BosniaAndHerzegovina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Botswana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BoxDrum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brazil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BreathySinging"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BruneiDarussalam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bulgaria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Canada"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cello"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChestVoice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chimta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#China"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChorAnglais"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Clarinet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ClarviChord"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coke_Studio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Colombia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Compilation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Compression"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ContinuumFingerBoard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cornet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Croatia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cuba"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cymbal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Czechia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Denmark"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dhime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Didgeridoo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Distortion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dizi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dominica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DominicanRepublic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DoubleBass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DoublingAndAd-Libs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DrumKit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EasyListening"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ecuador"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Egypt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EigenSharp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ektara"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElSalvador"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElectronicGuitar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElectronicKeyboard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Episode"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Erhu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Esraj"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Estonia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Euphonium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Europe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FeelingYourVoice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fiddle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FindYourPlace"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Finland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FlorGuitar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flute"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FrenchHorn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FullBelt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GIRAFFE_PAKISTAN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gambia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GatedSnare"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ghana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ghatam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GlassHarmonica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Glockenspiel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Greece"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Group1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guatemala"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guqin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guzheng"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Haiti"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HammeredDulcimer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Harmonica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Harmonium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Harp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Harpsichord"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HeadVoice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HipHop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HongKong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hulusi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hungry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HurdyGurdy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Iceland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Improvisation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#India"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IndianBanjo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Indonesia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InfuseEmotionsIntoLyrics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Interview"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Iran"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ireland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Israel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Italy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Japan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jazz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kalimba"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kaosscilator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kenya"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Labnan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Latvia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LeviOEsaaah"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lithuania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Live"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lute"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lyre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Malawi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Malaysia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mandolin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marimba"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MassiveGlotalAttack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mauritania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Melisma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Melodica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mexico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MicrophoneSelection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MixedBelt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Montenegro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Morocco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Namibia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NasalVoice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nepal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Netherland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NewZealand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nigeria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NorthMacedonia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norway"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oboe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ocarina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Octobass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Official"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Organ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Otamatone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oud"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pakistan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PanPipes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Panduri"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ParlandoRubato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pasoori_Duration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PennyWhistle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PerfectPitch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Peru"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Philippines"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PhrasingAndPronounciation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Piano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Piccolo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pipa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PitchShifting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Poland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pop"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Portugal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Producer1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Producer2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Promotion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PuertoRico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pungi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rabab"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Recorder"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Remix"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReverseReverb"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RolandOctapad"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Romania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Russia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SAmerica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Santoor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sarangi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sarinda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SaudiArabia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saxophone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scatting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Senegal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Serbia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shehnai"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sheng"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SideChain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Singapore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Singer1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Singer2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Single"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sitar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Slovakia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Slovenia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Song1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SongWriter1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Soul"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SoundTrack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SouthKorea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SpokenWord"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Srilanka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StandAboveRhythm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StateOfPalestine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StutteredVocals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stylophone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Suroz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sursinger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SuryaBTMEC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sweden"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SweetEmotion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Swing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Switzerland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Synthesizer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tabla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Taiwan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tambourine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tanzania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TempoGiusto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thailand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TheReactable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TheRemin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TheXthSense"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thundertube"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TimeStretching"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Timpani"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TipsAndPitfalls"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Togo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Triangle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trombone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trumpet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tuba"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Turkey"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Twang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ukraine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ukulele"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UnitedKingdom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Veena"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Venezuela"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vibrato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vietnam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Viola"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Violin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VocalFry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VocalRuns"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VoiceBreak"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VoiceRuns"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Whamola"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WholeBodyAsInstrument"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WholeLottaDiaphragm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Xylophone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yamen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zambia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zimbabwe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zither"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#binder7709"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#faisalmukhtar3992"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ganeshmoorthy4387"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kaustavdey2105"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mishiclicks5299"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#piku945"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#shivaayankshetrapalas4228"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sian786"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jew&apos;sHarp"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creationDate"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#language"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="mo:Genre"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasInstrument"/>
+            <Class abbreviatedIRI="mo:Instrument"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mo:Genre"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasOrigin"/>
+            <Class IRI="#Origin"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mo:Genre"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasRegion"/>
+            <Class abbreviatedIRI="schema:DefinedRegion"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="schema:name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:DefinedRegion"/>
+        <Class abbreviatedIRI="schema:Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:MusicGroup"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="#hasSinger"/>
+            <Class IRI="#Singer"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasCompany"/>
+            <Class IRI="#ProductionCompany"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasGenre"/>
+            <Class abbreviatedIRI="mo:Genre"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasProducer"/>
+            <Class IRI="#Producer"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasReleaseStatus"/>
+            <Class IRI="#ReleaseStatus"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasReleaseType"/>
+            <Class IRI="#ReleaseType"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasSinger"/>
+            <Class IRI="#Singer"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasSongWriter"/>
+            <Class IRI="#SongWriter"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#lyrics"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="schema:name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#trackId"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:Organization"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="schema:address"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:Organization"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="schema:name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:Person"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="schema:birthDate"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:Person"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="schema:deathDate"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:Person"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="schema:gender"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="schema:Person"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="schema:name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Africa"/>
+        <Class abbreviatedIRI="schema:DefinedRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Artist"/>
+        <Class abbreviatedIRI="schema:Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asia"/>
+        <Class abbreviatedIRI="schema:DefinedRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#European"/>
+        <Class abbreviatedIRI="schema:DefinedRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NorthAmerica"/>
+        <Class abbreviatedIRI="schema:DefinedRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oceania"/>
+        <Class abbreviatedIRI="schema:DefinedRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Producer"/>
+        <Class abbreviatedIRI="schema:Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionCompany"/>
+        <Class abbreviatedIRI="schema:Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Singer"/>
+        <Class abbreviatedIRI="schema:Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SongWriter"/>
+        <Class abbreviatedIRI="schema:Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SouthAmerica"/>
+        <Class abbreviatedIRI="schema:DefinedRegion"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Accordion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#AcousticGuitar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#AfghaniGuitar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Albania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReleaseType"/>
+        <NamedIndividual IRI="#Album"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Algeria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Alghoza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#AlphaSphere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Angola"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SouthAmerica"/>
+        <NamedIndividual IRI="#Argentina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Armenia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Artist"/>
+        <NamedIndividual IRI="#Artist1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReleaseType"/>
+        <NamedIndividual IRI="#AudioBook"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Oceania"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Austria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#AutoTune"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Azerbaijan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#BackPhrasing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Baglama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Bagpipes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Banjo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#BassGuitar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Bassoon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Belarus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Belgium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Benin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Berimbau"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Genre"/>
+        <NamedIndividual IRI="#Blues"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Bongo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReleaseStatus"/>
+        <NamedIndividual IRI="#BootLeg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#BosniaAndHerzegovina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Botswana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#BoxDrum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SouthAmerica"/>
+        <NamedIndividual IRI="#Brazil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#BreathySinging"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#BruneiDarussalam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Bulgaria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NorthAmerica"/>
+        <NamedIndividual IRI="#Canada"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Cello"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#ChestVoice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SouthAmerica"/>
+        <NamedIndividual IRI="#Chile"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Chimta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#China"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#ChorAnglais"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Clarinet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#ClarviChord"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Organization"/>
+        <NamedIndividual IRI="#Coke_Studio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SouthAmerica"/>
+        <NamedIndividual IRI="#Colombia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReleaseType"/>
+        <NamedIndividual IRI="#Compilation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#Compression"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Genre"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#ContinuumFingerBoard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Cornet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Genre"/>
+        <NamedIndividual IRI="#Country"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Croatia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NorthAmerica"/>
+        <NamedIndividual IRI="#Cuba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Cymbal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Czechia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Denmark"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Dhime"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Didgeridoo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#Distortion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Dizi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NorthAmerica"/>
+        <NamedIndividual IRI="#Dominica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NorthAmerica"/>
+        <NamedIndividual IRI="#DominicanRepublic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#DoubleBass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#DoublingAndAd-Libs"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#DrumKit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Genre"/>
+        <NamedIndividual IRI="#EasyListening"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SouthAmerica"/>
+        <NamedIndividual IRI="#Ecuador"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Egypt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#EigenSharp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Ektara"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NorthAmerica"/>
+        <NamedIndividual IRI="#ElSalvador"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#ElectronicGuitar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#ElectronicKeyboard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Genre"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReleaseType"/>
+        <NamedIndividual IRI="#Episode"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Erhu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Esraj"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Estonia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Euphonium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Origin"/>
+        <NamedIndividual IRI="#Europe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#FeelingYourVoice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Fiddle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#FindYourPlace"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Finland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#FlorGuitar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Flute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#FrenchHorn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#FullBelt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProductionCompany"/>
+        <NamedIndividual IRI="#GIRAFFE_PAKISTAN"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Gambia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#GatedSnare"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Ghana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Ghatam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#GlassHarmonica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Glockenspiel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Gong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:MusicGroup"/>
+        <NamedIndividual IRI="#Group1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NorthAmerica"/>
+        <NamedIndividual IRI="#Guatemala"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Guqin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Guzheng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NorthAmerica"/>
+        <NamedIndividual IRI="#Haiti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#HammeredDulcimer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Hang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Harmonica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Harmonium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Harp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Harpsichord"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#HeadVoice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Genre"/>
+        <NamedIndividual IRI="#HipHop"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#HongKong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Hulusi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Hungry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#HurdyGurdy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Iceland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#Improvisation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#India"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#IndianBanjo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Indonesia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#InfuseEmotionsIntoLyrics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReleaseType"/>
+        <NamedIndividual IRI="#Interview"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Iran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Ireland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Israel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Italy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Japan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Genre"/>
+        <NamedIndividual IRI="#Jazz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Kalimba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Kaosscilator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Kenya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Labnan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Latvia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Review"/>
+        <NamedIndividual IRI="#LeviOEsaaah"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Lithuania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReleaseType"/>
+        <NamedIndividual IRI="#Live"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Lute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Lyre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Malawi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Malaysia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Mandolin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Marimba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#MassiveGlotalAttack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Mauritania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#Melisma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Melodica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NorthAmerica"/>
+        <NamedIndividual IRI="#Mexico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#MicrophoneSelection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#MixedBelt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Montenegro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Morocco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Namibia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#NasalVoice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Nepal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Netherland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Oceania"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Nigeria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#NorthMacedonia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Norway"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Oboe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Ocarina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Octobass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReleaseStatus"/>
+        <NamedIndividual IRI="#Official"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Organ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Otamatone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Oud"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#PanPipes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Panduri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#ParlandoRubato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Duration"/>
+        <NamedIndividual IRI="#Pasoori_Duration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#PennyWhistle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#PerfectPitch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SouthAmerica"/>
+        <NamedIndividual IRI="#Peru"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Philippines"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#PhrasingAndPronounciation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Piano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Piccolo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Pipa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#PitchShifting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Poland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Genre"/>
+        <NamedIndividual IRI="#Pop"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Portugal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Producer"/>
+        <NamedIndividual IRI="#Producer1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Producer"/>
+        <NamedIndividual IRI="#Producer2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReleaseStatus"/>
+        <NamedIndividual IRI="#Promotion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NorthAmerica"/>
+        <NamedIndividual IRI="#PuertoRico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Pungi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Rabab"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Recorder"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReleaseType"/>
+        <NamedIndividual IRI="#Remix"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#ReverseReverb"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Genre"/>
+        <NamedIndividual IRI="#Rock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#RolandOctapad"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Romania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Russia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Origin"/>
+        <NamedIndividual IRI="#Russia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SouthAmerica"/>
+        <NamedIndividual IRI="#SAmerica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Santoor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Sarangi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Sarinda"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#SaudiArabia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Saxophone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#Scatting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Senegal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Serbia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Shehnai"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Sheng"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#SideChain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Singapore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Singer"/>
+        <NamedIndividual IRI="#Singer1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SongWriter"/>
+        <NamedIndividual IRI="#Singer1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Singer"/>
+        <NamedIndividual IRI="#Singer2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReleaseType"/>
+        <NamedIndividual IRI="#Single"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Sitar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Slovakia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Slovenia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+        <NamedIndividual IRI="#Song1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SongWriter"/>
+        <NamedIndividual IRI="#SongWriter1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Genre"/>
+        <NamedIndividual IRI="#Soul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReleaseType"/>
+        <NamedIndividual IRI="#SoundTrack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#SouthKorea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReleaseType"/>
+        <NamedIndividual IRI="#SpokenWord"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Srilanka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#StandAboveRhythm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#StateOfPalestine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#StutteredVocals"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Stylophone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Suroz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Sursinger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Review"/>
+        <NamedIndividual IRI="#SuryaBTMEC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Sweden"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#SweetEmotion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#Swing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Switzerland"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Synthesizer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Tabla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Taiwan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Tambourine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Tanzania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#TempoGiusto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Thailand"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#TheReactable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#TheRemin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#TheXthSense"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Thundertube"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#TimeStretching"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Timpani"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#TipsAndPitfalls"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Togo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Triangle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Trombone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Trumpet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Tuba"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Turkey"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#Twang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NorthAmerica"/>
+        <NamedIndividual IRI="#USA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Origin"/>
+        <NamedIndividual IRI="#USA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#Ukraine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Ukulele"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#European"/>
+        <NamedIndividual IRI="#UnitedKingdom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Origin"/>
+        <NamedIndividual IRI="#UnitedKingdom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Veena"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SouthAmerica"/>
+        <NamedIndividual IRI="#Venezuela"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#Vibrato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Vietnam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Viola"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Violin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#VocalFry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#VocalRuns"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#VoiceBreak"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#VoiceRuns"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Whamola"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#WholeBodyAsInstrument"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#VocalTechnique"/>
+        <NamedIndividual IRI="#WholeLottaDiaphragm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Xylophone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asia"/>
+        <NamedIndividual IRI="#Yamen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Zambia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Africa"/>
+        <NamedIndividual IRI="#Zimbabwe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Zither"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Review"/>
+        <NamedIndividual IRI="#binder7709"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Review"/>
+        <NamedIndividual IRI="#faisalmukhtar3992"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Review"/>
+        <NamedIndividual IRI="#ganeshmoorthy4387"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Review"/>
+        <NamedIndividual IRI="#kaustavdey2105"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Review"/>
+        <NamedIndividual IRI="#mishiclicks5299"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Review"/>
+        <NamedIndividual IRI="#piku945"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Review"/>
+        <NamedIndividual IRI="#shivaayankshetrapalas4228"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="schema:Review"/>
+        <NamedIndividual IRI="#sian786"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mo:Instrument"/>
+        <NamedIndividual IRI="#Jew&apos;sHarp"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#Cornet"/>
+        <NamedIndividual IRI="#Trumpet"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Fiddle"/>
+        <NamedIndividual IRI="#Violin"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Harmonium"/>
+        <NamedIndividual IRI="#Organ"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#Marimba"/>
+        <NamedIndividual IRI="#Xylophone"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Blues"/>
+        <NamedIndividual IRI="#BassGuitar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Blues"/>
+        <NamedIndividual IRI="#Bassoon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Blues"/>
+        <NamedIndividual IRI="#DoubleBass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Blues"/>
+        <NamedIndividual IRI="#DrumKit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Blues"/>
+        <NamedIndividual IRI="#Saxophone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Blues"/>
+        <NamedIndividual IRI="#Viola"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#Blues"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Blues"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Blues"/>
+        <NamedIndividual IRI="#Melisma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#Accordion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#Banjo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#ElectronicGuitar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#Fiddle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#Harmonica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#Mandolin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#Ukulele"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#Violin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#Xylophone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#Zither"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#Canada"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#Sweden"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#UnitedKingdom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#ParlandoRubato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#ContemporaryFolk"/>
+        <NamedIndividual IRI="#TempoGiusto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Accordion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Banjo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#DrumKit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#ElectronicGuitar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Fiddle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Harmonica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Mandolin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Piano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Viola"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Violin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Canada"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Iran"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Ireland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Japan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Mexico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Netherland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Philippines"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Poland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Sweden"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#UnitedKingdom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Country"/>
+        <NamedIndividual IRI="#Twang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#EasyListening"/>
+        <NamedIndividual IRI="#BassGuitar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#EasyListening"/>
+        <NamedIndividual IRI="#Bassoon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#EasyListening"/>
+        <NamedIndividual IRI="#Clarinet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#EasyListening"/>
+        <NamedIndividual IRI="#DoubleBass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#EasyListening"/>
+        <NamedIndividual IRI="#DrumKit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#EasyListening"/>
+        <NamedIndividual IRI="#FrenchHorn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#EasyListening"/>
+        <NamedIndividual IRI="#Timpani"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#EasyListening"/>
+        <NamedIndividual IRI="#Trumpet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#EasyListening"/>
+        <NamedIndividual IRI="#Viola"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#EasyListening"/>
+        <NamedIndividual IRI="#Violin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#EasyListening"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#AlphaSphere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#ContinuumFingerBoard"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#EigenSharp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#ElectronicKeyboard"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#Kaosscilator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#RolandOctapad"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#TheReactable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#TheRemin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#TheXthSense"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#Russia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#China"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#Italy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#Japan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#Singapore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#SouthKorea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#Taiwan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#GatedSnare"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#PitchShifting"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#ReverseReverb"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#SideChain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#StutteredVocals"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#ElectronicMusic"/>
+        <NamedIndividual IRI="#TimeStretching"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMembers"/>
+        <NamedIndividual IRI="#Group1"/>
+        <NamedIndividual IRI="#Singer1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMembers"/>
+        <NamedIndividual IRI="#Group1"/>
+        <NamedIndividual IRI="#Singer2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#DrumKit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Synthesizer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Albania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Algeria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Angola"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Azerbaijan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Belgium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Benin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#BosniaAndHerzegovina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Botswana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Brazil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#BruneiDarussalam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Bulgaria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Canada"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#China"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Colombia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Croatia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Cuba"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Czechia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Dominica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Egypt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#ElSalvador"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Finland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#France"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Gambia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Ghana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Haiti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#HongKong"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Hungry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Iceland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Indonesia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Iran"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Ireland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Israel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Italy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Japan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Kenya"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Labnan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Malaysia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Mauritania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Mexico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Montenegro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Morocco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Namibia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Nepal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Nigeria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Norway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Philippines"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Portugal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Romania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Russia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#SaudiArabia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Senegal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Serbia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Singapore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Slovakia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Slovenia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#SouthKorea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Srilanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#StateOfPalestine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Sweden"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Switzerland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Taiwan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Tanzania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Thailand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Togo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Turkey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Ukraine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Yamen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Zambia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Zimbabwe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#AutoTune"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Compression"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#Distortion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#DoublingAndAd-Libs"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#HipHop"/>
+        <NamedIndividual IRI="#MicrophoneSelection"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Clarinet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#ElectronicGuitar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Harmonica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Piano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Saxophone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Trombone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Trumpet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Viola"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Whamola"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Albania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Armenia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Azerbaijan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#BosniaAndHerzegovina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Brazil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Bulgaria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Canada"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Croatia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Cuba"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Denmark"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#France"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Haiti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Iran"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Italy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Japan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Malawi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Mexico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Montenegro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Netherland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#NorthMacedonia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Poland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Serbia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Slovakia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#SouthAfrica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Sweden"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#UnitedKingdom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#BackPhrasing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Improvisation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#InfuseEmotionsIntoLyrics"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#PerfectPitch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#PhrasingAndPronounciation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Scatting"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#StandAboveRhythm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#Swing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Jazz"/>
+        <NamedIndividual IRI="#TipsAndPitfalls"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#AcousticGuitar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Baglama"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#DrumKit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Mandolin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Synthesizer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#UnitedKingdom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#BassGuitar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#DrumKit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#ElectronicGuitar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#UnitedKingdom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Argentina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Armenia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Bangladesh"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Belarus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Belgium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#BosniaAndHerzegovina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Canada"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Chile"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#China"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Colombia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Croatia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Cuba"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Denmark"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#DominicanRepublic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Ecuador"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Estonia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Finland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#France"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Greece"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Guatemala"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Haiti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Hungry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Iceland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Indonesia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Iran"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Ireland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Israel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Italy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Japan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Latvia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Lithuania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Malaysia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Mexico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Nepal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#NewZealand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Norway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Pakistan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Peru"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Philippines"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Poland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Portugal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#PuertoRico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Serbia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Slovenia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#SouthKorea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Srilanka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Sweden"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Switzerland"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Taiwan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Thailand"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Turkey"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Ukraine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#UnitedKingdom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Venezuela"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#Zambia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#ChestVoice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#MassiveGlotalAttack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#SweetEmotion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#VocalFry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#WholeBodyAsInstrument"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Rock"/>
+        <NamedIndividual IRI="#WholeLottaDiaphragm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:byArtist"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#Artist1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCompany"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#Coke_Studio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCompany"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#GIRAFFE_PAKISTAN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDuration"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#Pasoori_Duration"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGenre"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#Pop"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProducer"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#Producer1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReleaseStatus"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#Official"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReleaseType"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#Episode"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReview"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#LeviOEsaaah"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReview"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#SuryaBTMEC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReview"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#binder7709"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReview"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#faisalmukhtar3992"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReview"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#ganeshmoorthy4387"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReview"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#kaustavdey2105"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReview"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#mishiclicks5299"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReview"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#piku945"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReview"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#shivaayankshetrapalas4228"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReview"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#sian786"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSinger"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#Group1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSongWriter"/>
+        <NamedIndividual IRI="#Song1"/>
+        <NamedIndividual IRI="#SongWriter1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#DoubleBass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#DrumKit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#ElectronicGuitar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#ElectronicKeyboard"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#Piano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#Saxophone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#Trombone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#Trumpet"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#Viola"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#Violin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#USA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#ChestVoice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#FeelingYourVoice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#FindYourPlace"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#HeadVoice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#NasalVoice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#Vibrato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Soul"/>
+        <NamedIndividual IRI="#VocalRuns"/>
+    </ObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#BassGuitar"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#DoubleBass"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#ElectronicKeyboard"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Piano"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Viola"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Austria"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#China"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Colombia"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#France"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#HongKong"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#India"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Indonesia"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Iran"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Italy"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Japan"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Malaysia"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Mexico"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Morocco"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Netherland"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Philippines"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Russia"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#SAmerica"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#SouthKorea"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Sweden"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Taiwan"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Thailand"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Turkey"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#UnitedKingdom"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#Vietnam"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#BreathySinging"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#FullBelt"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#HeadVoice"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#MixedBelt"/>
+    </NegativeObjectPropertyAssertion>
+    <NegativeObjectPropertyAssertion>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <NamedIndividual IRI="#Pop"/>
+        <NamedIndividual IRI="#VoiceBreak"/>
+    </NegativeObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:birthDate"/>
+        <NamedIndividual IRI="#Artist1"/>
+        <Literal>1951-01-16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:gender"/>
+        <NamedIndividual IRI="#Artist1"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#Artist1"/>
+        <Literal>Sheema Kirnami</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:address"/>
+        <NamedIndividual IRI="#GIRAFFE_PAKISTAN"/>
+        <Literal>Fairways Commercial, CP 94, Defence Raya Golf Resort Sector M DHA Phase 6, Lahore, Punjab 54810</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:description"/>
+        <NamedIndividual IRI="#LeviOEsaaah"/>
+        <Literal>Yknow when some songs give you “that feeling” i have it right now and i feel great 💅💅</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:duration"/>
+        <NamedIndividual IRI="#Pasoori_Duration"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.44</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:birthDate"/>
+        <NamedIndividual IRI="#Producer1"/>
+        <Literal>2000-08-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:gender"/>
+        <NamedIndividual IRI="#Producer1"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#Producer1"/>
+        <Literal>Abdullah Siddiqui</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:birthDate"/>
+        <NamedIndividual IRI="#Producer2"/>
+        <Literal>1980-10-28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:gender"/>
+        <NamedIndividual IRI="#Producer2"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#Producer2"/>
+        <Literal>Zulfiqar Jabbar Khan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:alternateName"/>
+        <NamedIndividual IRI="#Singer1"/>
+        <Literal>Ali Sethi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:award"/>
+        <NamedIndividual IRI="#Singer1"/>
+        <Literal>Lux Style Award for the Singer of the year</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:birthDate"/>
+        <NamedIndividual IRI="#Singer1"/>
+        <Literal>1984-07-02</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:gender"/>
+        <NamedIndividual IRI="#Singer1"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#Singer1"/>
+        <Literal>Ali Aziz Sethi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:birthDate"/>
+        <NamedIndividual IRI="#Singer2"/>
+        <Literal>1999-01-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:gender"/>
+        <NamedIndividual IRI="#Singer2"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#Singer2"/>
+        <Literal>Anushae Babar Gill</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:about"/>
+        <NamedIndividual IRI="#Song1"/>
+        <Literal>Let’s transcend boundaries and bridge distances through compassion, love and identity.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:datePublished"/>
+        <NamedIndividual IRI="#Song1"/>
+        <Literal>02-06-2022</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:inLanguage"/>
+        <NamedIndividual IRI="#Song1"/>
+        <Literal>Punjabi, Urdu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#Song1"/>
+        <Literal>Pasoori</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#lyrics"/>
+        <NamedIndividual IRI="#Song1"/>
+        <Literal>اگ لاہواں مجبوری نوں
+آݨ جاݨ دی بھسوڑی نوں
+زہر بݨے، ہاں، تیری
+پی جاواں میں پوری نوں
+آݨا سی، اوہ نئیں آیا
+دل بانگ بانگ میرا ٹکرایا
+کاگا بول کے دس جاوے
+پاہواں گھیو دی چوری نوں
+راہواں چہ، بانہواں چہ، اوہ نوں لکاواں
+کوئی مینوں نہ روکے
+میرے ڈھول، جدائیاں دی تینوں خبر کِویں ہووے؟
+آجا وے، دل تیرا پورا وی نہ ہووے
+ہاں، بݨیا بݨایاں دی گل بات کِویں ہووے؟
+آجا وے، دل تیرا پورا وی نہ ہووے
+بُھل گئی مجبوری نوں
+دنیا دی دستوری نوں
+ساتھ تیرا ہے بتھیرا
+پورا کر ضروری نوں
+آݨا سی، اوہ نئیں آیا
+راستہ نہ دکھلایا
+دل ہمارا دے سہارا
+خواہشات ادھوری نوں
+واری میں جاواں، میں تینوں بلاواں
+گل ساری تاں ہووے
+میرے ڈھول، جدائیاں دی تینوں خبر کِویں ہووے؟
+آجا وے، دل تیرا پورا وی نہ ہووے
+ہاں، بݨیا بݨایاں دی گل بات کِویں ہووے؟
+آجا وے، دل تیرا پورا وی نہ ہووے
+میرے ڈھول، جدائیاں دی سرداری نہ ہووے
+میرے ڈھول، جدائیاں دی...
+میرے ڈھول، جدائیاں دی سرداری نہ ہووے
+دلداراں دی، سبھ یاراں دی آزاری نہ ہووے
+دلداراں دی، سبھ یاراں دی آزاری نہ ہووے
+آ چلیں لے کے تجھے
+ہیں جہاں سلسلے
+تُو ہے وہی، ہے تیری کمی
+بنا دے، سجا دے، پناہ دے ہمیں
+بنا دے، سجا دے، پناہ دے ہمیں
+اگ لاہواں مجبوری نوں
+آݨ جاݨ دی بھسوڑی نوں
+زہر بݨے، ہاں، تیری
+پی جاواں میں پوری نوں
+راہواں چہ، بانہواں چہ، اوہ نوں لکاواں
+کوئی مینوں نہ روکے
+میرے ڈھول، جدائیاں دی تینوں خبر کِویں ہووے؟
+آجا وے، دل تیرا پورا وی نہ ہووے
+ہاں، بݨیا بݨایاں دی گل بات کِویں ہووے؟
+آجا وے، دل تیرا پورا وی نہ ہووے
+پورا وی نہ ہووے
+پورا وی نہ ہووے</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#trackId"/>
+        <NamedIndividual IRI="#Song1"/>
+        <Literal>5Eqb_-j3FDA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#views"/>
+        <NamedIndividual IRI="#Song1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">500000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:gender"/>
+        <NamedIndividual IRI="#SongWriter1"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <NamedIndividual IRI="#SongWriter1"/>
+        <Literal>Fazal Abbas</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:description"/>
+        <NamedIndividual IRI="#SuryaBTMEC"/>
+        <Literal>Song of the decade❤️♥️❤️♥️</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:description"/>
+        <NamedIndividual IRI="#binder7709"/>
+        <Literal>Great song this is my favorite song 🎵 ❤ 😅😅 Yes yes 🙌 👏 ❤</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:description"/>
+        <NamedIndividual IRI="#faisalmukhtar3992"/>
+        <Literal>Very nice ❤❤❤🎉🎉🎉</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:description"/>
+        <NamedIndividual IRI="#ganeshmoorthy4387"/>
+        <Literal>Awesome 👍 feel 🎉</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:description"/>
+        <NamedIndividual IRI="#kaustavdey2105"/>
+        <Literal>With due respect to all the music god&apos;s this song can never be remade...
+Kudos to the singers and the lyricist</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:description"/>
+        <NamedIndividual IRI="#mishiclicks5299"/>
+        <Literal>Master piece ❤❤</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:description"/>
+        <NamedIndividual IRI="#piku945"/>
+        <Literal>Love this ❤</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:description"/>
+        <NamedIndividual IRI="#shivaayankshetrapalas4228"/>
+        <Literal>It&apos;s genuinely heartening to witness our Indian brothers and sisters sharing such positive and uplifting comments here. Embracing diversity and unity creates an inclusive, harmonious community. Let&apos;s celebrate differences, connect cultures, and forge lasting friendships! 🌟🧡🧡🤝🇮🇳</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="schema:description"/>
+        <NamedIndividual IRI="#sian786"/>
+        <Literal>Came here to appreciate this masterpiece after listening to Bollywood version of pasoori .
+You guys have earned our respect ❤</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="schema:byArtist"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCompany"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDuration"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <Class abbreviatedIRI="mo:Genre"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMembers"/>
+        <Class abbreviatedIRI="schema:MusicGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <Class abbreviatedIRI="mo:Genre"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProducer"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRegion"/>
+        <Class abbreviatedIRI="mo:Genre"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReleaseStatus"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReleaseType"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReview"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSinger"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSongWriter"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <Class abbreviatedIRI="mo:Genre"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="schema:byArtist"/>
+        <Class IRI="#Artist"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCompany"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="schema:Organization"/>
+            <Class IRI="#ProductionCompany"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDuration"/>
+        <Class abbreviatedIRI="schema:Duration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class abbreviatedIRI="mo:Genre"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInstrument"/>
+        <Class abbreviatedIRI="mo:Instrument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMembers"/>
+        <Class IRI="#Singer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOrigin"/>
+        <Class IRI="#Origin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProducer"/>
+        <Class IRI="#Producer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRegion"/>
+        <Class abbreviatedIRI="schema:DefinedRegion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasReleaseStatus"/>
+        <Class IRI="#ReleaseStatus"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasReleaseType"/>
+        <Class IRI="#ReleaseType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasReview"/>
+        <Class abbreviatedIRI="schema:Review"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSinger"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="schema:MusicGroup"/>
+            <Class IRI="#Singer"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSongWriter"/>
+        <Class IRI="#SongWriter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#useVocalTechnique"/>
+        <Class IRI="#VocalTechnique"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:about"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:address"/>
+        <Class abbreviatedIRI="schema:Organization"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:addressRegion"/>
+        <Class abbreviatedIRI="schema:DefinedRegion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:alternateName"/>
+        <Class IRI="#Singer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:award"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="schema:MusicRecording"/>
+            <Class abbreviatedIRI="schema:Organization"/>
+            <Class abbreviatedIRI="schema:Person"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:birthDate"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="schema:Person"/>
+            <Class IRI="#Artist"/>
+            <Class IRI="#Producer"/>
+            <Class IRI="#Singer"/>
+            <Class IRI="#SongWriter"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:dateCreated"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:datePublished"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:deathDate"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="schema:Person"/>
+            <Class IRI="#Artist"/>
+            <Class IRI="#Producer"/>
+            <Class IRI="#Singer"/>
+            <Class IRI="#SongWriter"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:description"/>
+        <Class abbreviatedIRI="schema:Review"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:duration"/>
+        <Class abbreviatedIRI="schema:Duration"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:gender"/>
+        <Class abbreviatedIRI="schema:Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:inLanguage"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="mo:Genre"/>
+            <Class abbreviatedIRI="mo:Instrument"/>
+            <Class abbreviatedIRI="schema:MusicGroup"/>
+            <Class abbreviatedIRI="schema:MusicRecording"/>
+            <Class abbreviatedIRI="schema:Organization"/>
+            <Class abbreviatedIRI="schema:Person"/>
+            <Class abbreviatedIRI="schema:Place"/>
+            <Class IRI="#VocalTechnique"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="schema:size"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lyrics"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#trackId"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#views"/>
+        <Class abbreviatedIRI="schema:MusicRecording"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:about"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:addressRegion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:alternateName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:award"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:birthDate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:dateCreated"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:datePublished"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:deathDate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:duration"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:gender"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:inLanguage"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="schema:size"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lyrics"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#trackId"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#views"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mo:Genre</AbbreviatedIRI>
+        <Literal>A specific category or classification of music that shares common characteristics, styles, or cultural origins.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mo:Instrument</AbbreviatedIRI>
+        <Literal>A tool or other device used for performing a particular piece of work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:DefinedRegion</AbbreviatedIRI>
+        <Literal>A DefinedRegion is a geographic area defined by potentially arbitrary (rather than political, administrative or natural geographical) criteria. Properties are provided for defining a region by reference to sets of postal codes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:Duration</AbbreviatedIRI>
+        <Literal>The total interval of time a song takes to play the entire composition . It is usually measured in minutes and seconds.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:MusicGroup</AbbreviatedIRI>
+        <Literal>A musical group, such as a band, an orchestra, or a choir. Can also be a solo musician.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:MusicRecording</AbbreviatedIRI>
+        <Literal>A music recording (track), usually a single song.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:Organization</AbbreviatedIRI>
+        <Literal>An organization such as a school, NGO, corporation, club, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:Person</AbbreviatedIRI>
+        <Literal>A person (alive, dead, undead, or fictional).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:Place</AbbreviatedIRI>
+        <Literal>Entities that have a somewhat fixed, physical extension.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:Review</AbbreviatedIRI>
+        <Literal>A review of an item. for example, of a restaurant, song, movie, or store.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:address</AbbreviatedIRI>
+        <Literal>Physical address of the item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:addressRegion</AbbreviatedIRI>
+        <Literal>The region in which the locality is, and which is in the country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:alternateName</AbbreviatedIRI>
+        <Literal>An alias for the item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:award</AbbreviatedIRI>
+        <Literal>An award won by or for this item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:birthDate</AbbreviatedIRI>
+        <Literal>Date of birth of a person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:byArtist</AbbreviatedIRI>
+        <Literal>The artist that performed this album or recording.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:dateCreated</AbbreviatedIRI>
+        <Literal>The date on which the CreativeWork was created or the item was added to a DataFeed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:datePublished</AbbreviatedIRI>
+        <Literal>Date of first broadcast/publication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:deathDate</AbbreviatedIRI>
+        <Literal>Date of death of a person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:description</AbbreviatedIRI>
+        <Literal>A description of the item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:duration</AbbreviatedIRI>
+        <Literal>The time during which something continues.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:gender</AbbreviatedIRI>
+        <Literal>Gender of something, typically a Person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:inLanguage</AbbreviatedIRI>
+        <Literal>The language of the content or performance or used in an action.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:name</AbbreviatedIRI>
+        <Literal>The name of the item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>schema:size</AbbreviatedIRI>
+        <Literal>A standardized size of a product or creative work, specified either through a simple textual string (for example &apos;XL&apos;, &apos;32Wx34L&apos;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Africa</IRI>
+        <Literal>The continent that is to the south of the Mediterranean Sea.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Artist</IRI>
+        <Literal>A person who paints, draws, or makes sculptures. An artist is also a broad term used to describe anyone who creates art(song).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Asia</IRI>
+        <Literal>The continent that is north of the Indian Ocean.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#European</IRI>
+        <Literal>The continent that is to the east of the Atlantic Ocean.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NorthAmerica</IRI>
+        <Literal>The continent that is to the north of South America.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Oceania</IRI>
+        <Literal>The region of the world that consists of the islands of the Pacific Ocean and the seas around them</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Origin</IRI>
+        <Literal>The point or place where something begins, arises, or is derived.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Producer</IRI>
+        <Literal>Someone who manufactures something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProductionCompany</IRI>
+        <Literal>The production company or studio responsible for the item, e.g. song, series, video game, episode etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ReleaseStatus</IRI>
+        <Literal>A creative output from an artist available for sale or distribution. It is a broad term covering the many different forms music can be released in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ReleaseType</IRI>
+        <Literal>A particular sale/distribution type of a creative work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Singer</IRI>
+        <Literal>a person who sings a song.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SongWriter</IRI>
+        <Literal>A person who writes the musical work or words of songs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SouthAmerica</IRI>
+        <Literal>The continent that is to the south of North America.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VocalTechnique</IRI>
+        <Literal>Vocal techniques for singers are the tools by which you&apos;ll reach new heights in the studio and at gigs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCompany</IRI>
+        <Literal>Music recording(song) is produced by a production company.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasDuration</IRI>
+        <Literal>Music recording(song) has some particular duration in minutes or seconds.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasGenre</IRI>
+        <Literal>Music recording(song) has a specific genre.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasInstrument</IRI>
+        <Literal>Genre has an instrument with respect to cultural origins, styles and common characteristics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasOrigin</IRI>
+        <Literal>Genre is originated from a particular place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasProducer</IRI>
+        <Literal>The producer that produced this album or recording.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRegion</IRI>
+        <Literal>Genre has a localty, which is in the country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasReleaseStatus</IRI>
+        <Literal>Music recording(song) has a release status at the time of distribution/sale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasReleaseType</IRI>
+        <Literal>Music recording(song) has a particular release typeat the time of distribution/sale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasReview</IRI>
+        <Literal>Music recording(song) has a review from the audience.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSinger</IRI>
+        <Literal>The singer that sung this album or recording.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSongWriter</IRI>
+        <Literal>The song writer that wrote lyrics of this album or recording.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#trackId</IRI>
+        <Literal>On a compact disc the track number is indexed so that a player can jump straight to the start of any track.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#useVocalTechnique</IRI>
+        <Literal>Music recording(song) uses a specific vocal technique.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#views</IRI>
+        <Literal>Total number of views or streams of a song.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
